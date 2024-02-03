@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { getDictionary } from "../../get-dictionary";
 import { Locale } from "../../i18n-config";
 import Counter from "./components/counter";
@@ -12,6 +13,12 @@ export default async function IndexPage({
 
   return (
     <div>
+      <Image
+        src="/pexels-eberhard-grossgasteiger-2437291.jpg"
+        width={200}
+        height={200}
+        alt="Cabin and Mountain"
+      />
       <LocaleSwitcher />
       <p>Current locale: {lang}</p>
       <p>
