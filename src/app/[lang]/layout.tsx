@@ -1,5 +1,6 @@
 import "@/app/globals.css";
 import { i18n, type Locale } from "@/i18n-config";
+import { poppins } from "@/utils/font-loader";
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }));
@@ -13,7 +14,7 @@ export default function Root({
   params: { lang: Locale };
 }) {
   return (
-    <html lang={params.lang}>
+    <html lang={params.lang} className={`${poppins.variable}`}>
       <body>{children}</body>
     </html>
   );
