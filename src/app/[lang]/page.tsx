@@ -12,20 +12,25 @@ export default async function IndexPage({
   const dictionary = await getDictionary(lang);
 
   return (
-    <div>
-      <Image
-        src="/pexels-eberhard-grossgasteiger-2437291.jpg"
-        width={200}
-        height={200}
-        alt="Cabin and Mountain"
-      />
-      <LocaleSwitcher />
-      <p>Current locale: {lang}</p>
-      <p>
-        This text is rendered on the server:{" "}
-        {dictionary["server-component"].welcome}
-      </p>
-      <Counter dictionary={dictionary.counter} />
+    <div className="w-full min-h-screen grid grid-cols-12">
+      <div className="col-span-6 relative sm:block hidden">
+        <Image
+          src={"/pexels-eberhard-grossgasteiger-2437291.jpg"}
+          alt="Cabin and Mountain"
+          sizes="(min-width: 768px) 50vw, 0vw"
+          fill
+          className="object-cover max-w-full h-auto"
+        />
+      </div>
+      <div className="col-span-12 sm:col-span-6 bg-neutral-100 px-8 py-4 flex flex-col gap-2">
+        <LocaleSwitcher />
+        <p className=" text-xl">Current locale: {lang}</p>
+        <p>
+          This text is rendered on the server:{" "}
+          {dictionary["server-component"].welcome}
+        </p>
+        <Counter dictionary={dictionary.counter} />
+      </div>
     </div>
   );
 }
