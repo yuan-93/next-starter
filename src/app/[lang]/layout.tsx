@@ -1,3 +1,4 @@
+import "@/app/globals.css";
 import { i18n, type Locale } from "@/i18n-config";
 
 export async function generateStaticParams() {
