@@ -1,23 +1,16 @@
-# Internationalized Routing
+# Nextjs starter
 
-Next.js doesn't support internationalized routing in `app` directory out of the box. But you can easily implement it yourself. This example shows how to implement internationalized routing on the Edge.
+This nextjs starter repo contains some most common use features out of the box
 
-## Deploy your own
+1. Typescript
+2. Tailwindcss
+3. Recommended way of font loading from Nextjs into Tailwindcss
+4. Nextjs App internationalized routing
+5. Readied Nextjs vscode debug launch settings for client side, server side and both.
+6. Component type that allows to extend to different html element
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/app-dir-i18n-routing)
+## Start Development by
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing&project-name=app-dir-i18n-routing&repository-name=app-dir-i18n-routing)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example app-dir-i18n-routing i18n-app
-# or
-yarn create next-app --example app-dir-i18n-routing i18n-app
-# or
-pnpm create next-app --example app-dir-i18n-routing i18n-app
 ```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+npm run dev
+```
