@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "@formatjs/intl-localematcher": "0.2.32",
+    "clsx": "^2.1.0",
     "negotiator": "0.6.3",
     "next": "latest",
     "react": "^18.2.0",
